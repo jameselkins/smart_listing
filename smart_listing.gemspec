@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", ">=3.2"
   s.add_dependency "coffee-rails"
-  s.add_dependency "kaminari", "~> 0.17"
+  s.add_dependency "kaminari", '>= 0.15', '< 2.0'
   s.add_dependency "jquery-rails"
 
   s.add_development_dependency "bootstrap-sass"
@@ -25,6 +25,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec-rails"
 
   s.add_development_dependency "capybara", "~> 2.4.4"
-  s.add_development_dependency "capybara-webkit", "~> 1.3.1"
+  # s.add_development_dependency "capybara-webkit", "~> 1.3.1"
   s.add_development_dependency "database_cleaner"
 end
