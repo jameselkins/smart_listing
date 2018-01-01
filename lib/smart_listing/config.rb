@@ -139,6 +139,10 @@ module SmartListing
       @options[:constants].try(:[], :element_templates).try(:[], key) || DEFAULTS[:constants][:element_templates][key]
     end
 
+    def bootstrap_commands key
+      @options[:constants].try(:[], :bootstrap_commands).try(:[], key) || DEFAULTS[:constants][:bootstrap_commands][key]
+    end
+
     def global_options value = nil
       if value && !value.empty?
         @options[:global_options] ||= {}
